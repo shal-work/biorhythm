@@ -5339,7 +5339,7 @@ const biorhythm = () => {
 
   /* Начало - Модальное окно, разбор даты*/
 
-  let stringDate = prompt('Введите дату в формате ДД.ММ.ГГГГ', '');
+  let stringDate = prompt('Введите дату рождения в формате ДД.ММ.ГГГГ', '');
 
   if (isNaN(stringDate) == false) {
     stringDate = "01.1.1900";
