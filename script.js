@@ -5179,23 +5179,23 @@ const biorhythm = () => {
     for (let i = 0; i < main.length; i++) {
       main[i].style.display = "block";
       main[i].style.float = "center";
-      main[i].style.width = "480px";
+      main[i].style.width = "390px";
     }
 
     for (let i = 0; i < date.length; i++) {
-      date[i].style.width = "450px";
+      date[i].style.width = "370px";
       date[i].style.fontSize = "26px"; // date[i].style.marginTop  = "3%";
 
       date[i].style.height = "23px";
     } // dateCorrentValue[0].style.width  = "200px";
 
 
-    dateBirth[0].style.width = "440px";
+    dateBirth[0].style.width = "360px";
     dateBirth[0].style.fontSize = "26px";
     dateBirth[0].style.textAlign = "center";
     dateBirth[0].style.marginTop = "3%";
     dateBirth[0].style.height = "23px";
-    dateCorrentValue[0].style.width = "440px";
+    dateCorrentValue[0].style.width = "360px";
     dateCorrentValue[0].style.fontSize = "26px";
     dateCorrentValue[0].style.textAlign = "center";
     dateCorrentValue[0].style.marginTop = "3%";
@@ -5203,22 +5203,22 @@ const biorhythm = () => {
     btn[0].style.display = 'inline';
     btn[0].style.fontSize = "26px";
     btn[0].style.height = "48px";
-    btn[0].style.width = "470px";
+    btn[0].style.width = "390px";
     btn[0].style.marginTop = "3%"; // main[i].style.width  = "210px";
     // main[i].style.height  = "20px";
 
-    h[0].style.width = '460px';
+    h[0].style.width = '390px';
     text.forEach(function (item, i, text) {
       item.style.font = "14pt Arial";
-      item.style.width = '470px';
+      item.style.width = '400px';
     });
     canvas.style.display = "none";
     canvasGadget.style.display = "flex";
-    cxGadget.clearRect(0, 0, 1000, 500); //очистить от предыдущих линий
+    cxGadget.clearRect(0, 0, 420, 500); //очистить от предыдущих линий
 
     cxGadget.fillStyle = color_background; // Установка цвета заливки и цвет шрифта
 
-    cxGadget.fillRect(0, 0, 1000, 500); // Установка размера границ заливки 
+    cxGadget.fillRect(0, 0, 420, 500); // Установка размера границ заливки 
 
     cxGadget.lineWidth = 2;
     cxGadget.shadowBlur = 10;
@@ -5228,11 +5228,11 @@ const biorhythm = () => {
         emotionalCycle = 28,
         intellectualCycle = 33,
         offsetY = 200,
-        offsetX = 22,
-        scaleX = 30,
-        offsetL = 870,
+        offsetX = 10,
+        scaleX = 29,
+        offsetL = 420,
         //длина линии ОХ
-    controlDay = 15;
+    controlDay = 14;
     offsetL = (controlDay - 1) * scaleX;
     let dateEnd = new Date(currentDate.year, currentDate.month, currentDate.date);
     let dateBegin = new Date(dateBirthday.year, dateBirthday.month, dateBirthday.date);
