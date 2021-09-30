@@ -1,2 +1,2 @@
 # biorhythm
-biorhythm
+read-biorhythm 
