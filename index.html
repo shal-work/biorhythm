@@ -11,20 +11,74 @@
 <body>
     <h2>БИОРИТМЫ</h2>
 
-    <!-- <div class="container">
-        <button class="btn">Fade out all texts</button>
-    </div> -->
-
     <div class="main">
-        <div class="date">Текущая дата</div>
-        <input class="date-corrent-value" id="date-corrent-mask" type="text"></input>
+        <div class="">
+            <div class="date">Текущая дата</div>
+            <input class="date-corrent-value" id="date-current-mask" type="text"></input>
+        </div>
+        <section class="calendar noselect calendar-current">
+            <div id="month-calendar-corrent">
+                <ul class="year noselect">
+                    <li class="year-name"></li>
+                    <li class="prev10">❮❮</li>
+                    <li class="prev">❮</li>
+                    <li class="next">❯</li>
+                    <li class="next10">❯❯</li>
+               </ul>
+                <ul class="month noselect">
+                    <li class="month-name"></li>
+                    <li class="prev">❮</li>
+                    <li class="next">❯</li>
+                </ul>
+                <ul class="weekdays">
+                    <li>Пн</li>
+                    <li>Вт</li>
+                    <li>Ср</li>
+                    <li>Чт</li>
+                    <li>Пт</li>
+                    <li>Сб</li>
+                    <li>Вс</li>
+                </ul>
+                <ul class="days"></ul>
+                <button class="btn btn__calendar">Ок</button>
+            </div>
+        </section>
     </div>
     <div class="main">
-        <div class="date">Дата рождения</div>
-        <input class="date-birthday" id="date-birthday-mask" type="text" name="date_birthday"></input>
-        <div> </div>
-        <button class="btn" id="button">График</button>
-
+            <div class="">
+                <div class="date">Дата рождения</div>
+                <input class="date-birthday" id="date-birthday-mask" type="text" name="date_birthday"></input>
+            </div>
+            <section class="calendar noselect calendar-birthday">
+                <div id="month-calendar-birthday">
+                    <ul class="year noselect">
+                        <li class="year-name"></li>
+                        <li class="prev10">❮❮</li>
+                        <li class="prev">❮</li>
+                        
+                        <li class="next">❯</li>
+                        <li class="next10">❯❯</li>
+                   </ul>
+                    <ul class="month noselect">
+                        <li class="month-name"></li>
+                        <li class="prev">❮</li>
+                        <li class="next">❯</li>
+                    </ul>
+                    <ul class="weekdays">
+                        <li>Пн</li>
+                        <li>Вт</li>
+                        <li>Ср</li>
+                        <li>Чт</li>
+                        <li>Пт</li>
+                        <li>Сб</li>
+                        <li>Вс</li>
+                    </ul>
+                    <ul class="days"></ul>
+                    <button class="btn btn__calendar">Ок</button>
+                </div>
+            </section>
+        </div>
+        <button class="btn" id="button-calc">График</button>
     </div>
 
     <canvas id="myCanvas" width="1000" height="600"></canvas>
